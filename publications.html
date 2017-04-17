@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Isaac Tamblyn</title>
+<link rel="stylesheet" href="emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91911-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead"> 
+  <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1>  
+  <div id="globalNav"> 
+    <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr"> 
+    <div id="globalLink"> 
+      <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ontario Institute of Technology</a>
+	  <a href="http://www.physics.dal.ca" target="physics.dal.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Faculty of Science</a>
+	  <a href="http://maps.google.com/maps?q=Halifax,+Nova+Scotia,+Canada&spn=0.170079,0.282452&hl=en" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Oshawa, Ontario, Canada</a>
+    </div> 
+    <!--end globalLinks--> 
+  </div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"> 
+    <a href="http://www.uoit.ca" target="www.uoit.ca">University Homepage</a> | 
+	<a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
+	<a href="http://gradstudies.uoit.ca/" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
+	<a href="http://www.uoit.ca/registrar­" target="registrar.uoit.ca">Registrar's Office</a> | 
+
+  </div> 
+  <div id="subglobal2" class="subglobalNav"> 
+    <a href="http://www.science.uoit.ca/faculty_and_staff/physics-faculty-and-staff--.php" target="physics.uoit.ca">Physics Homepage</a> | 
+	<a href="http://www.science.uoit.ca/faculty_and_staff/deans-office-and-support-staff--.php" target="contact department">Department contact information</a>
+  </div> 
+  <div id="subglobal3" class="subglobalNav"> 
+    <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16">Map it</a> | 
+	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
+    <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
+	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
+
+  </div> 
+  <div id="subglobal4" class="subglobalNav"> 
+    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> 
+  </div> 
+  <div id="subglobal5" class="subglobalNav"> 
+    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> 
+  </div> 
+  <div id="subglobal6" class="subglobalNav"> 
+    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> 
+  </div> 
+  <div id="subglobal7" class="subglobalNav"> 
+    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> 
+  </div> 
+  <div id="subglobal8" class="subglobalNav"> 
+    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> 
+  </div> 
+
+</div> 
+<!-- end masthead -->
+<div id="pagecell1"> 
+  <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr">
+  <div id="breadCrumb">
+  </div>
+  <div id="pageName"> 
+    <h2>Publications</h2> 
+  </div> 
+  <div id="pageNav"> 
+    <div id="sectionLinks"> 
+      <a href="index.html">Home</a>
+ 	  <a href="research.html">Research</a>
+ 	  <a href="group/index.html">Group Members</a>
+ 	  <a href="collaborators.html">Collaborators</a>
+ 	  <a href="codes.html">Codes and Computing</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="funding.html">Funding</a>
+      <a href="publications.html">Publications</a>
+      <a href="prospective_students.html">Prospective Students</a>
+      <a href="classroom_tech.html">Classroom Tech</a>
+      
+    </div>
+
+  </div> 
+  <div id="content"> 
+    <div class="story">
+
+<ol>
+
+
+	<table>
+	  <td>
+	    <li value=32>K. Mills, M. Spanner, and <u>I. Tamblyn</u>, "Deep learning and the Schrodinger equation", <i>submitted</i>, [<a href="https://arxiv.org/abs/1702.01361" target="new window">open access link</a>] (2017)</li>
+  	  <br>
+  	  <br>
+  	  <b><h1><a href="publications/032.html">Manuscript Summary</a></h1></b>
+	  </td>
+	  <td>
+	    <img height=100px src="publications/images/032.png">
+	  </td>
+	</table>		
+	
+
+	<table>
+	  <td>
+	    <li value=31><u>I. Tamblyn</u>, "The electronic structure of nanoscale interfaces"<i>submitted</i>, [<a href="https://arxiv.org/abs/1702.01361" target="new window">open access link</a>] (2017)</li>
+	  </td>
+	  <td>
+	    <img height=100px src="publications/images/031.png">
+	  </td>
+	</table>	
+	
+	
+	
+	<table>
+	  <td>
+	    <li value=30>Y. Chen, <u>I. Tamblyn</u>, and S.Y. Quek, "Electronic Energy Level Alignment at Hybridized Organic-Metal Interfaces: Molecule Layer versus Single Molecules
+"<i>submitted</i>, [<a href="https://arxiv.org/abs/1702.01361" target="new window">open access link</a>] (2017)</li>
+	  </td>
+	  <td>
+	    <img height=100px src="publications/images/BDA_chemisorption.png">
+	  </td>
+	</table>
+
+	
+	
+	<table>
+	  <td>
+	    <li value=29>N. Portman & <u>I. Tamblyn</u> "Sampling algorithms for validation of supervised learning models for Ising-like systems", <i>submitted</i>, [<a href="https://arxiv.org/abs/1611.05891" target="new window">open access link</a>] (2017)</li>
+	  <br>
+	  <br>
+	  <b><h1><a href="publications/029.html">Manuscript Summary</a></h1></b>
+	  </td>
+	  <td>
+	    <img height=100px src="publications/images/ising_PCA.png">
+	  </td>
+	</table>
+	
+	<table>
+	  <td>
+	    <li value=28>K. Ryczko & <u>I. Tamblyn</u> "Structural characterizations of water-metal interfaces", <i>submitted</i>, [<a href="https://arxiv.org/abs/1611.02307" target="new window">open access link</a>] (2017)</li>
+	  <br>
+	  <br>
+	  <b><h1><a href="publications/028.html">Manuscript Summary</a></h1></b>
+	  </td>
+	  <td>
+	    <img height=100px src="group/images/itamblyn/structural_characterization.png">
+	  </td>
+	</table>
+	
+	<table>
+	  <td>
+	    <li value=27>G. Gupta, M. Radhakrishna, <u>I. Tamblyn</u>, D. QH Tran, M. Besemann, A. Thonnagith, M.F. Elgueta, M.E. Robitaille, R.J. Finlayson, "A randomized comparison between neurostimulation- and ultrasound-guided lateral femoral cutaneous nerve block", <i>accepted</i> Army Medical Dept. J., (2016)</li>
+	  </td>
+	  <td>
+	    <img height=100px src="group/images/itamblyn/leg_freeze.png">
+	  </td>
+	</table>
+	
+
+<table>
+  <td>
+    <li value=26>K. Ryczko, A. Domurad, N. Buhagiar, and <u>I. Tamblyn</u>, "hashkat: Large-scale simulations of online social networks", Soc. Netw. Anal. Min. 7:4, [<a href="http://rdcu.be/o1Kf" target="new window"]>open access link</a>] (2016)</li>
+  <br>
+  <br>
+  <b><h1><a href="publications/026.html">Manuscript Summary</a></h1></b>
+  </td>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/agent_types.png">
+  </td>
+</table> 
+
+
+<table>
+  <td>
+    <li value=25>S Whitelam, <u>I. Tamblyn</u>, J.P. Garrahan, and P.H. Beton, "Emergent rhombus tilings from molecular interactions with M-fold rotational symmetry", Phys. Rev. Lett., 114, 115702 [<a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.115702">PRL</a> (<a href="http://arxiv.org/abs/1411.3644" target="new window">open access link</a>)] (2015) <a href="http://journals.aps.org/prl/covers/114/11"><b>Cover article</b></a></li>
+  </td>
+  <td>
+    <img height=150px src="group/images/itamblyn/emergent_rhombus.png">
+  </td>
+</table>
+
+<table>
+  <td>
+    <li value=24>S. Choing, A. J. Francis, G. Clendenning*, M. Schuurman, Roger D. Sommer, <u>I. Tamblyn</u>, W.W. Weare, and T. Cuk, "Vibrational trapping of excited 3d electrons leads to long lived LMCT in a d0 V Complex", <i>accepted</i> J. Phys. Chem. C, (2015)<b>Cover article</b></li>
+    <br>
+    <br>
+    <b><h1><a href="publications/024.html">Manuscript Summary</a></h1></b>
+  </td>
+  <td>
+    <img height=150px src="group/images/itamblyn/d0V.png">
+  </td>
+</table> 
+
+<table>
+  <td>
+    <li value=23><u>I. Tamblyn</u>, S. Refaely-Abramson, J.B. Neaton, and L. Kronik, "Simultaneous determination of structures, vibrations, and frontier orbital energies from a self-consistent range-separated hybrid functional", J. Phys. Chem. Lett., 5, 2734, [<a href="http://pubs.acs.org/doi/abs/10.1021/jz5010939">JPCL</a>] (2014)</li>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/SOFRSH.png">
+  </td>
+</table> 
+
+<table>
+  <td>
+    <li value=22>S.G. Srinivasan, N. Goldman, <u>I. Tamblyn</u>, S. Hamel, and M. Gaus, "A Density Functional Tight Binding Model with an Extended Basis Set and Three-Body Repulsion for Hydrogen under Extreme Thermodynamic Conditions", J. Phys. Chem.  A, 118, 5520−5528 [<a href="http://pubs.acs.org/doi/pdf/10.1021/jp5036713" target="new window">JPCA</a>] (2014)</li>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/DFTBp3bH.png">
+  </td>
+</table>
+
+
+
+<table>
+  <td>
+    <li value=21>S. Whitelam, <u>I. Tamblyn</u>, T.K. Haxton, M.B. Wieland, N.R. Champness, J.P. Garrahan, and P.H. Beton, "Common physical framework explains phase behavior and dynamics of atomic, molecular and polymeric network-formers", Phys. Rev. X 4, 011044, [<a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.4.011044" target="new window">PRX (open access link)</a>] (2014)</li>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/QBZ.png">
+  </td>
+</table> 
+
+
+
+<table>
+ <td>
+    <li value=20>N. Goldman, <u>I. Tamblyn</u>, "Prebiotic chemistry within a simple impacting icy mixture", Journal of Physical Chemistry A, 117 (24), 5124-5131, [<a href="http://pubs.acs.org/doi/abs/10.1021/jp402976n" target="new window">JPCA</a>], (2013), <b><a href="http://pubs.acs.org/action/showLargeCover?jcode=jpcafh&vol=117&issue=24" target="JCPA">Cover article</a></b></li>
+    <br>
+    <br>
+    <b><h1>== News coverage ==</h1></b>
+    <ul>
+      <li><a href="http://www.newyorker.com/online/blogs/elements/2013/06/how-an-exploding-comet-might-have-forged-life-on-earth.html" target="away">The New Yorker</a></li>
+      <li><a href="http://newswatch.nationalgeographic.com/2013/06/06/did-comets-kick-start-life-on-earth/" target="away">National Geographic News Watch</a></li>
+      <li><a href="http://www.livescience.com/37271-comet-impacts-spurred-life.html" target="away">LiveScience</a></li>
+      <li><a href="http://zeenews.india.com/news/space/life-on-earth-may-have-come-from-out-of-this-world_853192.html" target="away">ZeeNews</a></li>
+      <li><a href="http://www.redorbit.com/news/space/1112866323/comets-brought-organic-ingredients-for-life-060613/" target="away">redOrbit</a></li>
+      <li><a href="http://www.enn.com/ecosystems/article/46065" target="away">ENN</a></li>
+      <li><a href="http://www.scienceagogo.com/news/20130506202942data_trunc_sys.shtml" target="away">Science A GoGo</a></li>
+      <li><a href="http://www.upi.com/Science_News/2013/06/06/Life-building-compounds-on-early-Earth-may-have-had-cosmic-origins/UPI-33041370563097/" target="away">UPI</a></li>
+    </ul>
+  </td>
+  <td>
+  <center>
+    <img height=100px src="group/images/itamblyn/comet_cover.jpg"><img height=100px src="group/images/itamblyn/comet.png">
+  </center>
+  </td>
+</table>
+     
+<table>
+  <td>
+    <li value=19>T.K. Haxton, H. Zho, <u>I. Tamblyn</u>, D. Eom, Z. Hu, J.B. Neaton, T.F. Heinz, and S. Whitelam, "Competing thermodynamic and dynamic factors select molecular assemblies on a gold surface", Phys. Rev. Lett., 111, 265701 [<a href="http://prl.aps.org/abstract/PRL/v111/i26/e265701" target="new window">PRL</a> (<a href="http://arxiv.org/abs/1311.7417" target="new window">open access link</a>)] (2013)</li>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/BDA_Zho.png">
+  </td>
+</table>     
+      
+<table>
+  <td>
+  <li value=18>M. Yu, P. Doak, <u>I. Tamblyn</u>, and J.B. Neaton, "Theoretical design of redox levels of thiophene on functionalized light-absorbing semiconductor surfaces", J. Phys. Chem. Lett., 4, 1701-1706, [<a href="http://pubs.acs.org/doi/abs/10.1021/jz400601t" target="new window">JPCL</a>], (2013)</li>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/thiophene.png">
+  </td>
+</table>  
+      
+<table>
+  <td>
+    <li value=17>S. Sharifzadeh, <u>I. Tamblyn</u>, P. Doak, P. Darancet, and J.B. Neaton,  "Quantitative Molecular Orbital Energies within a G<sub>0</sub>W<sub>0</sub> Approximation",  European Physical Journal B, [<a href="http://link.springer.com/article/10.1140%2Fepjb%2Fe2012-30206-0" target="new window">EPJB</a> (<a href="http://arxiv.org/abs/1204.0509v1" target="arxiv">open access link</a>)], (2012)
+  </td>
+  <td>
+    <a href="http://arxiv.org/abs/1204.0509v1" target="arxiv"><img height=100px src="group/images/itamblyn/EPJ_2012.png"></a>
+  </td>
+</table>
+         
+<table>
+  <td>
+    <li value=16> G. Li, <u>I. Tamblyn</u>, V. Cooper and J.B. Neaton,  "Molecular Adsorption on Metal Surfaces with a van der Waals Density Functional", Phys. Rev. B 85, 121409(R), [<a href="http://prb.aps.org/abstract/PRB/v85/i12/e121409" target="PRB">PRB</a> (<a href="http://arxiv.org/abs/1201.1326" target="arxiv">open access link</a>)], (2012)
+  </td>
+  <td>
+    <a href="http://arxiv.org/abs/1201.1326" target="arxiv"><img height=100px src="group/images/itamblyn/vdW_DF.png"></a>
+  </td>
+</table>
+
+<table>
+  <td>
+    <li value=15> S. Whitelam, <u>I. Tamblyn</u>, P.H. Beton and J.P. Garrahan,  "Random and ordered phases of off-lattice rhombus tiles", Physical Review Letters, 108, 035702, [<a href="http://prl.aps.org/abstract/PRL/v108/i3/e035702" target="PRL">PRL</a> (<a href="http://arxiv.org/abs/1109.1450" target="arxiv">open access link</a>)], (2012)
+  </td>
+  <td>
+    <a href="http://arxiv.org/abs/1109.1450" target="arxiv"><img height=100px src="group/images/itamblyn/rhombus.png"></a>
+  </td>
+</table>
+
+<table>
+  <td>
+    <li value=14> <u>I. Tamblyn</u>, P. Darancet, S.Y. Quek, S.A. Bonev, and J.B. Neaton, "Electronic energy level alignment at metal-molecule interfaces with a GW approach", Phys. Rev. B 84, 201402(R), [<a href="http://prb.aps.org/abstract/PRB/v84/i20/e201402" target="PRB">PRB</a> (<a href="http://arxiv.org/abs/1111.2569" target="arxiv">open access link</a>)], (2011)
+  </td>
+  <td>
+    <a href="http://prb.aps.org/abstract/PRB/v84/i20/e201402" target="PRB"><img height=100px src="group/images/itamblyn/BDA_GW.png"></a>
+  </td>
+</table>
+
+
+<table>
+  <td>
+	<li value=13> A. Biller, <u>I. Tamblyn</u>, J.B. Neaton, and L. Kronik,  "Electronic level alignment at a metal-molecule interface from a short-range hybrid functional", J. Chem. Phys. 135, 164706, [<a href="http://dx.doi.org/10.1063/1.3655357" target="new window">JCP</a>] (2011)
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/HSE_JCP_2011.png">
+  </td>
+</table>
+
+
+<li value=12> M.A. Morales, L.X. Benedict, D.S. Clark, E. Schwegler, <u>I. Tamblyn</u>, S.A. Bonev, A.A. Correa, S. W. Haan, "<i>Ab initio</i> equation of state of hydrogen for inertial fusion applications", High Energy Density Physics 8, 1, (2011)
+
+<table>
+  <td>
+	<li value=11> <u>I. Tamblyn</u> and S.A. Bonev "Structure and phase boundaries of compressed liquid hydrogen", Physical Review Letters, 104, 065702, [<a href="http://prl.aps.org/abstract/PRL/v104/i6/e065702" target="new window">PRL</a> (<a href="http://arxiv.org/abs/0910.1798" target="new window">open access link</a>)] (2010). <b>PRL Editor's Suggestion</b>; featured in <a href="http://physics.aps.org/synopsis-for/10.1103/PhysRevLett.104.065702" target="new window">Physics</a>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/Hydrogen_PRL_2012.png">
+  </td>
+</table>
+
+<table>
+  <td>
+    <li value=10> <u>I. Tamblyn</u> and S.A. Bonev "A note on the metallization of compressed liquid hydrogen", Journal of Chemical Physics, 132, 134503, [<a href="http://dx.doi.org/10.1063/1.3369625" target="new window">JCP</a> (<a href="http://arxiv.org/abs/0912.3931" target="new window">open access link</a>)] (2010)
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/Hydrogen_metallization_sketch.png">
+  </td>
+</table>
+
+<table>	
+  <td>
+    <li value=9> M. Dell'Angela, G. Kladnik, A. Cossaro, A. Verdini, M. Kamenetska, <u>I. Tamblyn</u>, S.Y. Quek, J.B. Neaton, D. Cvetko, A. Morgante, L. Venkataraman "Relating Energy Level Alignment and Amine-Linked Molecular Junction Conductance", Nano Lett., 10 (7), pp 2470-2474, (2010)
+  </td>
+  <td>
+    <a href="http://dx.doi.org/10.1021/nl100817h" target="new window"><img src="group/images/itamblyn/BDA_XAS.png"></a>
+  </td>	
+</table>
+
+<table>
+  <td>
+    <li value=8> <u>I. Tamblyn</u>, J.-Y. Raty, S.A. Bonev "Tetrahedral clustering in molten lithium under pressure", Physical Review Letters, 101, 075703 (2008). <a href="http://prl.aps.org/covers/101/7" target="new window">Cover article</a>
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/li_structure.png">
+  </td>
+</table>
+
+       <li value=7> B. Militzer, W.B. Hubbard, J. Vorberger, <u>I. Tamblyn</u>, and S.A. Bonev "Massive core in Jupiter predicted from first-principles simulations", Astrophysical Journal Letters, 688: L45-L48 (2008)
+       <li value=6> <u>I. Tamblyn</u> and S.A. Bonev "Exploring the high pressure phase diagrams of light elements using large scale ab-initio molecular dynamics simulations", HPCS, pp. 154-160, 22nd International Symposium on High Performance Computing Systems and Applications (2008)
+       <li value=5> J. Vorberger, <u>I. Tamblyn</u>, B. Militzer, S.A. Bonev "Hydrogen-Helium Mixtures in the Interiors of Giant Planets", Phys. Rev. B, 75, 024206 (2007)
+
+<table>
+  <td>
+      <li value=4> <u>I. Tamblyn</u>, J. Vorberger, B. Militzer, S.A. Bonev,  "Inside the Jovian atmosphere: Hydrogen and Helium at extreme conditions", Physics in Canada, 63, 3, 133, <a href="http://www.cap.ca/en/publications/physics-canada-pic/issue/63/3" target="new window">Cover article</a> (2007)
+  </td>
+  <td>
+    <img height=100px src="group/images/itamblyn/PIC.jpg">
+  </td>
+</table>
+
+       <li value=3> J. Vorberger, <u>I. Tamblyn</u>, S.A. Bonev, B. Militzer "Properties of Dense Fluid Hydrogen and Helium in Giant Gas Planets" Contrib. Plasma Phys. 47, 4-5, 375 (2007) 
+       <li value=2> J. Garcia Sucerquia, W. Xu, S.K. Jericho, M.H. Jericho, <u>I. Tamblyn</u>, H.J. Kreuzer "Digital in line holography: 4-D imaging and tracking of microstructures and organisms in microfluidics and biology" ICO20: Biomedical Optics, Proc. SPIE 6026, 267-275, (2006, undergraduate work) 
+       <li value=1> <u>I. Tamblyn</u> and B. Paton "Sands of Time", Canadian Undergraduate Physics Journal, 4:13-16 (2005, undergraduate work)
+     </ol>
+
+	
+</div>
+</div>
+<div id="siteInfo"> 
+      <img src="images/space.GIF" width="25" height="31"> <img src="images/clean_logo.png" alt="UOIT" border="0"  height="50"> <img src="images/space.GIF" width="25" height="31"> 
+      <a href="http://www.uoit.ca" target="uoit.ca"><img src="images/uoit.jpg" alt="UOIT" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
+      <a href="http://www.nserc.gc.ca" target="nserc" border="0"><img src="images/nserc.gif" width="75" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31">
+      <a href="http://computecanada.ca" target="computecanada"><img src="images/compute_canada.png" height="31"> <a href="http://www.computecanada.org"></a><img src="images/space.GIF" width="25" height="31">
+      <a href="http://www.soscip.org" target="soscip" border="0"><img src="images/soscip_logo.png" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
+
+</div>
+
+
+
+</div></div>
+</di>
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
+</body>
+</html>

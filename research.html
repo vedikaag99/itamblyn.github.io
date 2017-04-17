@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Isaac Tamblyn</title>
+<link rel="stylesheet" href="emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91911-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+
+
+<!-- top_head -->
+<div id="masthead"> 
+  <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1> 
+  <div id="globalNav"> 
+    <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr"> 
+    <div id="globalLink"> 
+      <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ontario Institute of Technology</a>
+	  <a href="http://science.uoit.ca" target="science.uoit.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Faculty of Science</a>
+	  <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16" target="map" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Oshawa, Ontario, Canada</a>
+    </div> 
+    <!--end globalLinks--> 
+  </div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"> 
+    <a href="http://www.uoit.ca" target="www.uoit.ca">University Homepage</a> | 
+	<a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
+	<a href="http://gradstudies.uoit.ca" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
+	<a href="http://www.uoit.ca/registrar" target="registrar.uoit.ca">Registrar's Office</a> | 
+
+  </div> 
+  <div id="subglobal2" class="subglobalNav"> 
+    <a href="http://www.science.uoit.ca/faculty_and_staff/physics-faculty-and-staff--.php" target="physics.uoit.ca">Physics Homepage</a> | 
+	<a href="http://www.science.uoit.ca/faculty_and_staff/deans-office-and-support-staff--.php" target="contact department">Department contact information</a>
+  </div> 
+  <div id="subglobal3" class="subglobalNav"> 
+    <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16">Map it</a> | 
+	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
+    <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
+	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
+
+  </div> 
+  <div id="subglobal4" class="subglobalNav"> 
+    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> 
+  </div> 
+  <div id="subglobal5" class="subglobalNav"> 
+    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> 
+  </div> 
+  <div id="subglobal6" class="subglobalNav"> 
+    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> 
+  </div> 
+  <div id="subglobal7" class="subglobalNav"> 
+    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> 
+  </div> 
+  <div id="subglobal8" class="subglobalNav"> 
+    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> 
+  </div> 
+
+</div> 
+<!-- end masthead --> 
+<div id="pagecell1"> 
+<!--pagecell1--> 
+<img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr">
+
+<div id="breadCrumb">
+</div>
+<div id="pageName"> 
+    <h2>Research</h2> 
+</div> 
+<div id="pageNav"> 
+    <div id="sectionLinks"> 
+      <a href="index.html">Home</a>
+ 	  <a href="research.html">Research</a>
+ 	  <a href="group/index.html">Group Members</a>
+ 	  <a href="collaborators.html">Collaborators</a>
+ 	  <a href="codes.html">Codes and Computing</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="funding.html">Funding</a>
+      <a href="publications.html">Publications</a>
+      <a href="prospective_students.html">Prospective Students</a>
+      <a href="classroom_tech.html">Classroom Tech</a>
+      <a href="policy.html">Policy</a>
+	 
+
+
+    </div> 
+</div> 
+<!-- bottom_head -->
+
+<div id="content"> 
+	
+	<div class="story">
+	
+    <table width="*">  
+	  <tr>
+	    <td>
+		  <img src="images/quad_display.jpg" height=200px>
+		</td>
+		<td>
+		  <img src="images/VOLF.png" height=200px>
+		</td>
+
+	  </tr>
+	  </table>
+    </div>
+	
+<hr>
+
+    <div class="story">
+      <h3>Machine Learning for Advanced Materials</h3>
+      <table width="*">  
+	  <tr>
+
+	    <td>Using a combination of theoretical tools (multi-scale modelling), our group is exploring and designing lightweight materials for use in aircraft. Our goal is to make materials that are, in the words of <a href="https://www.bell-labs.com/about/presidents/mervin-j-kelly/" target="away">Mervin Kelly</a>, "better, cheaper, or both".
+     <br>
+     <br>
+     <h1>Recent articles</h1>
+	 <ul>
+	  <li><a href="publications/032.html">Deep learning and the Schrodinger equation</a>
+	  <li><a href="publications/029.html">Sampling algorithms for validation of supervised learning models for Ising-like systems</a> 
+	 </ul>
+	    </td>
+	    <td>
+		  <img src="images/materials.png" height=150px>
+		</td>
+	  </tr>
+	  </table>
+    </div>
+	
+<hr>
+	
+<div class="story">
+  <h3>Ab initio electrolysis</h3>
+  <table width="*">  
+  <tr>
+    <td>
+	    Given the ubiquity of electrochemistry as an analytical and industrial tool, the importance of developing a fully first principles description of this system cannot be overstated.
+	    At the same time, the complexity of the problem poses a significant obstacle to the development of an accurate atomistic description. 
+	    Obtaining the correct physical picture will require the union of several areas of theory. 
+	    A complete treatment will require an accurate description of the electrode-solution interface, both in terms of local geometry and electronic structure. 
+        <a href="codes.html">Methodological development</a> will be important in this field.
+     <br>
+     <br>
+     <h1>Recent articles</h1>
+	 <ul>
+	  <li><a href="publications/028.html">Electronic Structure of Liquid Water and a Platinum Surface</a>
+	 </ul>
+    </td>
+    
+    <td>
+    <iframe width="448" height="252" src="https://www.youtube.com/embed/ZEYPtYJEnm8" frameborder="0" allowfullscreen></iframe>
+	</td>
+  </tr>
+  </table>
+</div>
+
+<hr>
+    <div class="story">
+      <h3>Artificial Photosynthesis</h3>
+      <table width="*">  
+	  <tr>
+	    <td>
+		  <img src="images/artificial_photosynthesis.png" height=150px>
+		</td>
+	    <td>
+	      <p> Light from the sun provides an unlimited supply of energy. Our challenge is to harness this energy in an efficient and scalable manner. 
+	      Using metal-to-metal charge transfer complexes as light absorbers, an integrated, inorganic device shows promise for applications in <a href="http://solarfuelshub.org">water splitting and CO<sub>2</sub> sequestration.</a></p>
+	      <p>Through computational modelling, we aim to elucidate electronic processes which occur on the nanoscale, with the ultimate goal of improving efficiency and durability.
+        <br>
+        <br>
+        <h1>Recent articles</h1>
+	    <ul>
+	      <li><a href="publications/024.html">Vibrational trapping of excited 3d electrons leads to long lived LMCT in a d0 V Complex</a>
+	    </ul>
+	    </td>
+	  </tr>
+	  </table>
+    </div>
+
+
+
+<hr>
+
+
+
+
+<!-- <div class="story">
+  <h3>ICF: Inertial confinement fusion</h3>
+  <table width="*">  
+  <tr>
+    <td>
+	  <img src="images/NIF_interface.png" height=300px></td>
+    <td>
+	  I am interested in the study and design of energy related materials, especially their properties under extreme conditions. The realization of nuclear fusion as viable source of energy will require advanced materials. Modeling the behavior of both the fuel used in reactions and the vessels in which they are contained is one of the most important problems facing energy research today. </p>
+	</td>
+  </tr>
+  </table>
+</div>
+
+<hr>
+--!>
+
+<div class="story">
+      <h3> Networks and self assembly</h3>
+
+	  <table width="*">  
+	  <tr>
+		<td>
+		  <img src="images/self_assembly.png" height=150px>
+		</td>
+		<td>
+        Organic-metallic interfaces offer the possibility of novel next-generation photovoltaic devices.
+        Producing these devices reliably and cheaply poses many challenges, however.
+        Understanding and controlling self-assembly processes is an important aspect of the realization of this technology. Interestingly, this work has recently spun off in a very different direction: Online social Networks. See our open source tool, #k@ (<a href="http://hashkat.org">http://hashkat.org</a>), for more information.
+        <br>
+        <br>
+	    <h1>Recent articles</h1>
+	    <ul>
+	      <li><a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.115702" target="away">Emergent rhombus tilings from molecular interactions with M-fold rotational symmetry</a>
+	      <li><a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.4.011044" target="away">Common physical framework explains phase behavior and dynamics of atomic, molecular and polymeric network-formers</a>
+	    </ul>
+		</td>
+	  </tr>
+
+	  </table>
+
+   </div>
+
+</div>
+<div id="siteInfo"> 
+      <img src="images/space.GIF" width="25" height="31"> <img src="images/clean_logo.png" alt="UOIT" border="0"  height="50"> <img src="images/space.GIF" width="25" height="31"> 
+      <a href="http://www.uoit.ca" target="uoit.ca"><img src="images/uoit.jpg" alt="UOIT" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
+      <a href="http://www.nserc.gc.ca" target="nserc" border="0"><img src="images/nserc.gif" width="75" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31">
+      <a href="http://computecanada.ca" target="computecanada"><img src="images/compute_canada.png" height="31"> <a href="http://www.computecanada.org"></a><img src="images/space.GIF" width="25" height="31">
+      <a href="http://www.soscip.org" target="soscip" border="0"><img src="images/soscip_logo.png" height="31" border="0"></a> <img src="images/space.GIF" width="25" height="31"> 
+
+</div>
+
+
+</div></div>
+</di>
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
+</body>
+</html>
