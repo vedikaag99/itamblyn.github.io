@@ -125,7 +125,7 @@ function closesubnav(event){
   <div id="breadCrumb">
   </div>
   <div id="pageName"> 
-    <h2>Manuscript Summary - Deep learning and the Schrodinger equation"</h2> 
+    <h2>Manuscript Summary - Deep neural networks for learning operators through observation: the case of the 2d Ising model</h2> 
   </div> 
   <div id="pageNav"> 
     <div id="sectionLinks"> 
@@ -149,13 +149,12 @@ function closesubnav(event){
 <table width="*">  
   <tr>
   	    <td>
-		  <img src="images/032.png">
+		  <img src="images/033.png">
 		</td>
  
     <td>
 
-<p>In recent years, the fields of artificial intelligence and machine learning have been advancing rapidly and convolutional neural networks (CNN) have recently gained substantial attention for their application in self-driving cars, handwriting recognition, and object classification.  The use of convolutional neural networks directly and transferably to electronic structure has not, to our knowledge, ever been attempted.  We numerically solved the one-electron Schrödinger equation for millions of electrostatic potentials, and used this as training data a to train a deep convolutional neural network. We demonstrate the ability of a neural network to predict properties such as the ground-state energy, first excited state, and kinetic energy of an electron confined in four classes of two-dimensional, electrostatic potentials.  The model performs extraordinarily well, predicting the ground-state energy of an electron in randomly generated potentials to a median error of 1.49 MHa, below that of chemical accuracy.  Furthermore, a neural network trained on one class of potential is able to predict the energies of another class of potentials, although slightly less accurately.  Overall, the exceptional performance we see suggests that convolutional neural networks could be a new approach to electronic structure theory.
-
+<p>In this article, we show that deep neural networks (CNN to be exact) are able to learn how to compute properties of physical models through observation alone. You do not need to "teach" them equations or math. Here, we showed a CNN lots of examples of checkboard patterns, where each had a simple energy based on a "white likes white, black likes black" model. This is the same model we explored <a href="029.html">here</a>, except now we used deep learning rather than conventational machine learning approaches. The deep learning model we trained is so good that it can be used to explore phase transitions. We also show that it is really efficient. For a more difficult energy (one based on charged particles which have long range interactions), we trained a DNN that was 3 orders of magnitude (i.e. 1000x) faster than a conventional calculation.
  
 
 
