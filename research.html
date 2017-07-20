@@ -64,14 +64,14 @@ function closesubnav(event){
 
 
 <!-- top_head -->
+
 <div id="masthead"> 
   <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1> 
   <div id="globalNav"> 
     <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr"> 
     <div id="globalLink"> 
-      <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ontario Institute of Technology</a>
-	  <a href="http://science.uoit.ca" target="science.uoit.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Faculty of Science</a>
-	  <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16" target="map" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Oshawa, Ontario, Canada</a>
+      <a href="http://www.nrc-cnrc.gc.ca" target="nrc.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">National Research Council of Canada</a>
+	  <a href="https://www.google.com/maps/place/100+Sussex+Dr,+Ottawa,+ON+K1N+5A2,+Canada/@45.4386156,-75.6997435,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce04e68d038529:0x6b054ea5149c1915!8m2!3d45.4386119!4d-75.6975495" target="map" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Ottawa, Ontario, Canada</a>
     </div> 
     <!--end globalLinks--> 
   </div> 
@@ -84,14 +84,14 @@ function closesubnav(event){
 
   </div> 
   <div id="subglobal2" class="subglobalNav"> 
-    <a href="http://www.science.uoit.ca/faculty_and_staff/physics-faculty-and-staff--.php" target="physics.uoit.ca">Physics Homepage</a> | 
-	<a href="http://www.science.uoit.ca/faculty_and_staff/deans-office-and-support-staff--.php" target="contact department">Department contact information</a>
+    <a href="http://www.science.uoit.ca/people/physics-faculty-and-staff.php" target="physics.uoit.ca">Physics Homepage</a> | 
+	<a href=http://www.science.uoit.ca/people/administration.php" target="contact department">Department contact information</a>
   </div> 
   <div id="subglobal3" class="subglobalNav"> 
     <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16">Map it</a> | 
-	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
-    <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
-	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+	<a href="http://www.ottawa.ca/" target="HRM homepage">City of Ottawa</a> |
+    <a href="http://www.cbc.ca/ottawa/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
+	<a href="https://weather.gc.ca/city/pages/on-118_metric_e.html" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
 	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
 
   </div> 
@@ -122,15 +122,13 @@ function closesubnav(event){
   </div> 
 
 </div> 
-<!-- end masthead --> 
 <div id="pagecell1"> 
-<!--pagecell1--> 
 <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr">
 
 <div id="breadCrumb">
 </div>
 <div id="pageName"> 
-    <h2>Research</h2> 
+    <h2><font color=white>Home</font></h2> 
 </div> 
 <div id="pageNav"> 
     <div id="sectionLinks"> 
@@ -145,8 +143,7 @@ function closesubnav(event){
       <a href="prospective_students.html">Prospective Students</a>
       <a href="classroom_tech.html">Classroom Tech</a>
       <a href="policy.html">Policy</a>
-	 
-
+	  
 
     </div> 
 </div> 
@@ -176,11 +173,27 @@ function closesubnav(event){
       <table width="*">  
 	  <tr>
 
-	    <td>Using a combination of theoretical tools (multi-scale modelling), our group is exploring and designing lightweight materials for use in aircraft. Our goal is to make materials that are, in the words of <a href="https://www.bell-labs.com/about/presidents/mervin-j-kelly/" target="away">Mervin Kelly</a>, "better, cheaper, or both".
+	    <td>Using a combination of theoretical tools (multi-scale modelling), our group is exploring and designing advanced materials. Our goal is to make materials that are, in the words of <a href="https://www.bell-labs.com/about/presidents/mervin-j-kelly/" target="away">Mervin Kelly</a>, "better, cheaper, or both". 
+			
+<p>To do this, we are developing deep learning methods which can rapidly approximate the properties of materials based on first principles training data. Ultimately, our goal is to develop a model which is transferrable, generalizable, reliable, and scalable.
+
+<p><b>Transferability</b> means that the network is able to accurately predict properties for structures which it has not observed during training. 
+
+
+<p><b>Generalizability</b> means that the approach can be used for arbitrary observables, and that it is not sensitive to the details of the physical system to which it applies.  For example, we would like to be able to work with fluids, continuum models, and atomistic systems using the same basic methodologies, model architectures, and training protocols. 
+
+<p>By <b>reliable</b>, we mean that the model is able to provide accurate estimates for a property, and, perhaps more importantly, provide the user with a warning or signal when it is uncertain. In our experience, neural networks are much better at interpolating than extrapolating. We have found that whenever a model has difficulty with a particular configuration (i.e. the error is high), the configuration is far away from the training set (in weight space). In practice, one obviously would not have access to the “ground truth” value, therefore a reliable model should be able to signal not only its prediction, but also a measure of confidence.
+
+<p>The final property, scalability, relates to the extent to which the computational cost of evaluating the model can be distributed (e.g. across nodes in a cluster or multiple GPU).
+
+<p>Our latest approaches are generalizable, scalable, and transferrable. Their reliability can be ensured through a GAN-like training procedure 
      <br>
      <br>
      <h1>Recent articles</h1>
 	 <ul>
+	  <li><a href="publications/035.html">Extensive deep neural networks</a>
+   	  <li><a href="publications/034.html">Convolutional neural networks for atomistic systems</a>
+	  <li><a href="publications/033.html">Deep neural networks for learning operators through observation</a>
 	  <li><a href="publications/032.html">Deep learning and the Schrodinger equation</a>
 	  <li><a href="publications/029.html">Sampling algorithms for validation of supervised learning models for Ising-like systems</a> 
 	 </ul>
