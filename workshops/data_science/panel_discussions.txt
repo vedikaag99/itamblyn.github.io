@@ -1,0 +1,15 @@
+Hello,
+
+The schedule has been updated with a list of tech talks and speakers (http://itamblyn.github.io/workshops).
+
+We will also have two panel discussions. 
+
+Please not that the panel in the afternoon is specfically designed for non-practitioners. A decent fraction of the registrations were from individuals that are not currently using data science in their position, but are interested in learning about potential applications. Some people have ideas or data which may be useful, but would like to partner with someone to develop the project.
+
+We will use the afternoon panel discussion for such people to talk about their potential projects, solicit feedback, and hopefully find collaboration opportunities.
+
+PLEASE contact me to participate in this special panel!
+
+I look forward to seeing you on the 26th at Sussex.
+
+- IT

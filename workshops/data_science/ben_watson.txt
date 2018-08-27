@@ -1,0 +1,2 @@
+Title: Collection Probability Forecast
+Abstract: The Collection Probability Forecast (CPF) is a machine learning algorithm that predicts what percent of a debt Agriculture Canada will ultimately collect.
