@@ -1,0 +1,23 @@
+Dear Colleagues,
+
+This email is to invite you to participate in a mini-symposium about application of Data Science in the public sector. It will be held on Wednesday, 19 September 2018, in the main auditorium of 100 Sussex (the National Research Council of Canada).
+
+The objective of the symposium is to share information, methodologies, and ideas among members of the local Ottawa community who are using data science in the public sector.
+
+Logistical details and the full schedule will be posted here: 
+
+http://itamblyn.github.io/workshops
+
+The day will consist of a series of tech talks and panel discussions.
+
+The event will run from 9-4 pm. There are no costs associated with attendance. 
+
+This is intended to be a technical conference directed at a technical audience. The idea is to present a problem that you have worked on and show how you solved it using data science techniques and tools.
+
+In order to present, please submit a title and brief abstract to isaac.tamblyn@nrc-cnrc.gc.ca by 15 August. 
+
+Please forward this invite to your co-workers.
+
+Thank you,
+
+Isaac Tamblyn
