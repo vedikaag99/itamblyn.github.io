@@ -1,0 +1,1 @@
+Add an option on the sign in list for speakers to give out their email to attendees

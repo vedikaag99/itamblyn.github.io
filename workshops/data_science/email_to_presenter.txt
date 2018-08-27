@@ -2,6 +2,10 @@ Hello,
 
 I am pleased to inform you that your presentation has been selected as one of the technical talks. The auditorium is equiped with a VGA connection. Please be sure to bring a laptop / any necessary cables to connect. A laser pointer and microphone will be available should you like to use them.
 
+Please confirm that your name, affiliation, and presentation title are correct and that you will be availble to speak at the indicated time (ideally you will attend the full day!).
+
+http://itamblyn.github.io/workshops
+
 If you have any questions, please do not hesitate to contact me.
 
 I look forward to your presentation!
