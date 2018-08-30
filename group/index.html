@@ -10,7 +10,6 @@
 <!--
 var time = 3000;
 var numofitems = 7;
-
 //menu constructor
 function menu(allitems,thisitem,startstate){ 
   callname= "gl"+thisitem;
@@ -20,7 +19,6 @@ function menu(allitems,thisitem,startstate){
   this.thediv = document.getElementById(divname);
   this.thediv.style.visibility = startstate;
 }
-
 //menu methods
 function ehandler(event,theobj){
   for (var i=1; i<= theobj.numberofmenuitems; i++){
@@ -29,7 +27,7 @@ function ehandler(event,theobj){
   }
   theobj.thediv.style.visibility="visible";
 }
-				
+        
 function closesubnav(event){
   if ((event.clientY <48)||(event.clientY > 107)){
     for (var i=1; i<= numofitems; i++){
@@ -42,17 +40,14 @@ function closesubnav(event){
 </script>
 
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-91911-12']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 
 
@@ -70,28 +65,28 @@ function closesubnav(event){
     <img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr"> 
     <div id="globalLink"> 
       <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">National Research Council of Canada</a>
-	  <a href="http://science.uoit.ca" target="science.uoit.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Ottawa, Ontario, Canada</a>
+    <a href="http://science.uoit.ca" target="science.uoit.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Ottawa, Ontario, Canada</a>
     </div> 
     <!--end globalLinks--> 
   </div> 
   <!-- end globalNav --> 
   <div id="subglobal1" class="subglobalNav"> 
     <a href="http://www.uoit.ca" target="www.uoit.ca">University Homepage</a> | 
-	<a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
-	<a href="http://gradstudies.uoit.ca" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
-	<a href="http://www.uoit.ca/registrar" target="registrar.uoit.ca">Registrar's Office</a> | 
+  <a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
+  <a href="http://gradstudies.uoit.ca" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
+  <a href="http://www.uoit.ca/registrar" target="registrar.uoit.ca">Registrar's Office</a> | 
 
   </div> 
   <div id="subglobal2" class="subglobalNav"> 
     <a href="http://www.science.uoit.ca/faculty_and_staff/physics-faculty-and-staff--.php" target="physics.uoit.ca">Physics Homepage</a> | 
-	<a href="http://www.science.uoit.ca/faculty_and_staff/deans-office-and-support-staff--.php" target="contact department">Department contact information</a>
+  <a href="http://www.science.uoit.ca/faculty_and_staff/deans-office-and-support-staff--.php" target="contact department">Department contact information</a>
   </div> 
   <div id="subglobal3" class="subglobalNav"> 
     <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&hl=en&sll=37.857901,-122.252357&sspn=0.011571,0.016351&oq=2000+sim&t=h&hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&z=16">Map it</a> | 
-	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
+  <a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
     <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
-	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
-	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
+  <a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+  <a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
 
   </div> 
   <div id="subglobal4" class="subglobalNav"> 
@@ -134,44 +129,209 @@ function closesubnav(event){
 <div id="pageNav"> 
     <div id="sectionLinks"> 
       <a href="../index.html">Home</a>
- 	  <a href="../research.html">Research</a>
- 	  <a href="index.html">Group Members</a>
- 	  <a href="../collaborators.html">Collaborators</a>
- 	  <a href="../codes.html">Codes and Computing</a>
- 	  <a href="../teaching.html">Teaching</a>
- 	  <a href="../funding.html">Funding</a>
- 	  <a href="../publications.html">Publications</a>
+    <a href="../research.html">Research</a>
+    <a href="index.html">Group Members</a>
+    <a href="../collaborators.html">Collaborators</a>
+    <a href="../codes.html">Codes and Computing</a>
+    <a href="../teaching.html">Teaching</a>
+    <a href="../funding.html">Funding</a>
+    <a href="../publications.html">Publications</a>
       <a href="../prospective_students.html">Prospective Students</a> 
-      <a href="../classroom_tech.html">Classroom Tech</a> 	 
-      <a href="../policy.html">Policy</a> 	  
-	   
-	  
+      <a href="../classroom_tech.html">Classroom Tech</a>    
+      <a href="../policy.html">Policy</a>     
+     
+    
     </div> 
 </div> 
 <!-- bottom_head -->
 
 <div id="content"> 
-	
+  
     <div class="story">
       <a href="itamblyn.html"><h3>Isaac Tamblyn</h3></a>
       <table width="*">  
-	  <tr>
-	    <td>
-		  <a href="itamblyn.html"><img src="images/itamblyn/itamblyn_bio.png" height=200px></a>
-		</td>
-	    <td>
-	      <h3>Welcome to our group. Please follow the links below to see the profiles of the team. Are you ready to get started? We're always looking for talented individuals to join in! This work is well suited for students with backgrounds in <u>physics</u>, <u>chemistry</u>, <u>math</u>, and <u>computer science</u>.<br><br>
-	        See our <a href="../funding.html">funding page</a> for information about current opportunities.
-	      </h3>
-	    </td>
-	    <td>
-	    The CLEAN Room is located in UA4280. If you feel old-fashioned, you can call our phone: 905.721.8668x3799.
-	    </td>
-	  </tr>
-	  </table>
+    <tr>
+      <td>
+      <a href="itamblyn.html"><img src="images/itamblyn/itamblyn_bio.png" height=200px></a>
+    </td>
+      <td>
+        <h3>Welcome to our group. Please follow the links below to see the profiles of the team. Are you ready to get started? We're always looking for talented individuals to join in! This work is well suited for students with backgrounds in <u>physics</u>, <u>chemistry</u>, <u>math</u>, and <u>computer science</u>.<br><br>
+          See our <a href="../funding.html">funding page</a> for information about current opportunities.
+        </h3>
+      </td>
+      <td>
+      The CLEAN Room is located in UA4280. If you feel old-fashioned, you can call our phone: 905.721.8668x3799.
+      </td>
+    </tr>
+    </table>
     </div>
 <hr>
 
+<div class="story">
+ <a href="./rcoles.html"><h3>Rory Coles</h3></a>
+  <table width="*">
+   <tr>
+    <td>
+     <a href="rcoles.html"><img src="images/rcoles/rcoles.jpg" height=200px></a>
+    </td>
+    <td>
+     MSc Student
+    </td>
+   </tr>
+  </table>
+</div>          
+      
+<hr>
+
+<div class="story">
+  <a href="./eselinger.html"><h3>Elizabeth Selinger</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+    Ontario Graduate Fellow, ICCD Scholar, QEIIDJ Scholar<br>
+    Masters Student (2015-) in Materials Science<br>
+    Currently: Internship @ Morneau Shepell 
+      </td>
+    <td>
+          <a href="eselinger.html"><img src="images/eselinger/eselinger.jpg" height=200px></a>
+    </td>
+    </tr>
+    </table>
+</div>
+
+<hr>
+
+<div class="story">
+  <a href="kryczko.html"><h3>Kevin Ryczko</h3></a>
+  <table width="*">  
+  <tr>
+    <td>
+   <a href="kryczko.html"><img src="images/kryczko/new_kryczko.png" height=200px></a>
+    <td>
+    PhD Student (2017-) in Physics @ uOttawa<br> 
+    Currently: Visiting Scholar at  National Research Council of Canada.
+  </td>
+  </tr>
+  </table>
+</div>
+<hr>
+
+<div class="story">
+  <a href="cbeeler.html"><h3>Chris Beeler</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+        Masters Student (2017-) in Computation and Modelling <br>
+  </td>
+    <td>
+          <a href="cbeeler.html"><img src="images/cbeeler/face.jpg" height=200px></a>
+    </td>
+    </tr>
+    </table>
+</div>
+<hr> 
+
+<div class="story">
+  <a href="kmills.html"><h3>Kyle Mills</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+          <a href="kmills.html"><img src="images/kmills/kmills.jpg" height=200px></a>
+    </td>
+      <td>
+      Ontario Graduate Scholar - PhD Student in Computation and Modelling
+        </td>
+
+    </tr>
+    </table>
+</div>
+
+<hr>
+
+<div class="story">
+  <a href="amaharaj.html"><h3>Amber Maharaj</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+      Ontario Graduate Scholar - Masters Student in Computation and Modelling
+      </td>
+      <td>
+          <a href="amaharaj.html"><img src="images/amaharaj/amaharaj.jpg" height=200px></a>
+    </td>
+
+
+    </tr>
+    </table>
+</div>
+
+<hr>
+<div class="story">
+  <a href="kkubrak.html"><h3>Kateryna Kubrak</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+          <a href="kkubrak.html"><img src="images/kkubrak/kkubrak.jpg" height=200px></a>
+    </td>
+      <td>
+      MITACS Globalink Scholar 2018 - Undergraduate Student in Computer Science
+        </td>
+
+    </tr>
+    </table>
+</div>
+
+<hr>
+<div class="story">
+  <a href="ksprague.html"><h3>Kyle Sprague</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+      Summer Student - Undergraduate Student in Physics and Mathematics
+      </td>
+      <td>
+          <a href="ksprague.html"><img src="images/ksprague/ksprague.jpg" height=200px></a>
+    </td>
+    </tr>
+    </table>
+</div>
+
+<hr>
+<div class="story">
+  <a href="yuwei.html"><h3>Yuwei Zhang</h3></a>
+    <table width="*">  
+    <tr>
+      <td>
+          <a href="yuwei.html"><img src="images/yuwei/yuwei.jpg" height=200px></a>
+    </td>
+      <td>
+      Summer Student - Undergraduate Student in Physics
+        </td>
+    </tr>
+    </table>
+</div>
+
+<hr>
+
+
+<div class="story">
+  <a href="robot.html"><h3>Robot</h3></a>
+  <table width="*">  
+  <tr>
+    <td>
+    Robot (2012- )<br>
+    4<sup>th</sup> year Computer Science
+  </td>
+    <td>
+   <a href="robot.html"><img src="images/robot/face.png" height=200px></a>
+    <td>
+  </tr>
+  </table>
+</div>
+
+<hr>
+<h2>Former members</h2>
+
+<hr>
 <div class="story">
  <a href="./uyahorau.html"><h3>Uladzimir Yahorau</h3></a>
   <table width="*">
@@ -200,216 +360,89 @@ function closesubnav(event){
           </tr>
           </table>
 </div>
-<hr>
-
-<div class="story">
- <a href="./rcoles.html"><h3>Rory Coles</h3></a>
-  <table width="*">
-   <tr>
-    <td>
-     <a href="rcoles.html"><img src="images/rcoles/rcoles.jpg" height=200px></a>
-    </td>
-    <td>
-     MSc Student
-    </td>
-   </tr>
-  </table>
-</div>          
-      
-<hr>
-
-
-
-
-
-
-
-<div class="story">
-  <a href="./eselinger.html"><h3>Elizabeth Selinger</h3></a>
-	  <table width="*">  
-	  <tr>
-	    <td>
-		Ontario Graduate Fellow, ICCD Scholar, QEIIDJ Scholar<br>
-		Masters Student (2015-) in Materials Science<br>
-		Currently: Internship @ Morneau Shepell 
-   	  </td>
-		<td>
-          <a href="eselinger.html"><img src="images/eselinger/eselinger.jpg" height=200px></a>
-		</td>
-	  </tr>
-	  </table>
-</div>
-
-<hr>
-
-<div class="story">
-  <a href="kryczko.html"><h3>Kevin Ryczko</h3></a>
-  <table width="*">  
-  <tr>
-    <td>
-	 <a href="kryczko.html"><img src="images/kryczko/new_kryczko.png" height=200px></a>
-    <td>
-    PhD Student (2017-) in Physics @ uOttawa<br> 
-	  Currently: Visiting Scholar at  National Research Council of Canada.
- 	</td>
-  </tr>
-  </table>
-</div>
-<hr>
-
-<div class="story">
-  <a href="cbeeler.html"><h3>Chris Beeler</h3></a>
-	  <table width="*">  
-	  <tr>
-	    <td>
-        Masters Student (2017-) in Computation and Modelling <br>
-	</td>
-		<td>
-          <a href="cbeeler.html"><img src="images/cbeeler/face.jpg" height=200px></a>
-		</td>
-	  </tr>
-	  </table>
-</div>
-<hr> 
-
-<div class="story">
-  <a href="kmills.html"><h3>Kyle Mills</h3></a>
-	  <table width="*">  
-	  <tr>
-	  	<td>
-          <a href="kmills.html"><img src="images/kmills/kmills.jpg" height=200px></a>
-		</td>
-	    <td>
-	    Ontario Graduate Scholar - PhD Student in Computation and Modelling
-        </td>
-
-	  </tr>
-	  </table>
-</div>
-
-<hr>
-
-<div class="story">
-  <a href="amaharaj.html"><h3>Amber Maharaj</h3></a>
-	  <table width="*">  
-	  <tr>
-	  	<td>
-	    Ontario Graduate Scholar - Masters Student in Computation and Modelling
-	    </td>
-	  	<td>
-          <a href="amaharaj.html"><img src="images/amaharaj/amaharaj.jpg" height=200px></a>
-		</td>
-
-
-	  </tr>
-	  </table>
-</div>
-
-<hr>
-
-
-
-
-<div class="story">
-  <a href="robot.html"><h3>Robot</h3></a>
-  <table width="*">  
-  <tr>
-    <td>
-    Robot (2012- )<br>
-    4<sup>th</sup> year Computer Science
- 	</td>
-    <td>
-	 <a href="robot.html"><img src="images/robot/face.png" height=200px></a>
-    <td>
-  </tr>
-  </table>
-</div>
-
-<hr>
-<h2>Former members</h2>
 
 <hr>
 <div class="story">
       <a href="sgholami.html"><h3>Shiva Gholami</h3></a>
-	  <table width="*">  
-	  <tr>
+    <table width="*">  
+    <tr>
       <td
         <a href="sgholami.html"><img src="images/sgholami/sgholami.jpg" height=200px></a>
-	  </td>
-	    <td>
-		Postdoctoral Fellow, Machine Learning
-		Current postion: Data Scientist
-   	  </td>
+    </td>
+      <td>
+    Postdoctoral Fellow, Machine Learning
+    Current postion: Data Scientist
+      </td>
 
-	  </tr>
-	  </table>
+    </tr>
+    </table>
 </div>
 
 <hr>
 
 <div class="story">
   <a href="dnemirovsky.html"><h3>David Nemirovsky</h3></a>
-	  <table width="*">  
-	  <tr>
-	    <td>
+    <table width="*">  
+    <tr>
+      <td>
         Masters Student (2014-2017) in Computer Science<br>
-	</td>
-		<td>
+  </td>
+    <td>
           <a href="dnemirovsky.html"><img src="images/dnemirovsky/face.jpg" height=200px></a>
-		</td>
-	  </tr>
-	  </table>
+    </td>
+    </tr>
+    </table>
 </div>
 <hr> 
 
 <div class="story">
   <a href="nbuhagiar.html"><h3>Nicholas Buhagiar</h3></a>
-	  <table width="*">  
-	  <tr>
+    <table width="*">  
+    <tr>
 
-	  	<td>
+      <td>
           <img src="images/nbuhagiar/nbuhagiar.jpg" height=200px>
-		</td>
- 	  	<td>
+    </td>
+      <td>
         Honours Thesis (2015-2016)
-		Current position: MSc CS @ Ryerson Univesity
+    Current position: MSc CS @ Ryerson Univesity
          </td>
-	  </tr>
-	  </table>
+    </tr>
+    </table>
 </div>
 
 <hr>
 
 <div class="story">
  <h3>Linda Kettle</h3></a>
-	  <table width="*">  
-	  <tr>
- 	  	<td>
+    <table width="*">  
+    <tr>
+      <td>
         Work Studies (2015-2016)
          </td>
- 	  	<td>
+      <td>
            <img src="images/lkettle/lkettle.jpg" height=200px>
- 		</td>
-	  </tr>
-	  </table>
+    </td>
+    </tr>
+    </table>
 </div>
 
 <hr>
 
 <div class="story">
       <a href="nportman.html"><h3>Nataliya Portman</h3></a>
-	  <table width="*">  
-	  <tr>
+    <table width="*">  
+    <tr>
       <td>
         <a href="nportman.html"><img src="images/nportman/nportman.jpg" height=200px></a>
-	  </td>
-	    <td>
-		Postdoctoral Fellow, Machine Learning
-		Current Position: Lead Data Scientist, <a href="https://www.traderev.com/en-ca/">TradeRev</a>
-   	  </td>
+    </td>
+      <td>
+    Postdoctoral Fellow, Machine Learning
+    Current Position: Lead Data Scientist, <a href="https://www.traderev.com/en-ca/">TradeRev</a>
+      </td>
 
-	  </tr>
-	  </table>
+    </tr>
+    </table>
 </div>
 
 <hr>
@@ -421,11 +454,11 @@ function closesubnav(event){
     <td>
      SOSCIP Graduate Student (2013-2015)<br>
      Material Science Program<br>
-	 Current Position: Data Analyst
+   Current Position: Data Analyst
     </td>
     <td>
-	 <a href="gclendenning.html"><img src="images/gclendenning/face.jpg" height=200px></a>
-	</td>
+   <a href="gclendenning.html"><img src="images/gclendenning/face.jpg" height=200px></a>
+  </td>
   </tr>
   </table>
 </div>
@@ -434,16 +467,16 @@ function closesubnav(event){
 
 
 <div class="story">
-	
+  
 <div class="story">
   <a href="robot.html"><h3>Konstantinos Kastritis</h3></a>
   <table width="*">  
   <tr>
     <td>
-	 <a href="kkastritis.html"><img src="images/kkastritis/face.jpg" height=200px></a>
+   <a href="kkastritis.html"><img src="images/kkastritis/face.jpg" height=200px></a>
     <td>
     NSERC USRA (Summer 2015)<br>
- 	</td>
+  </td>
   </tr>
   </table>
 </div>
@@ -451,34 +484,34 @@ function closesubnav(event){
 <hr>
 
   <h3>Sarah Coombs</h3>
-	  <table width="*">  
-	  <tr>
-	    <td>
-		UOIT Star Award
+    <table width="*">  
+    <tr>
+      <td>
+    UOIT Star Award
         Summer Research Assistant (2013)<br>
         Current position: Teaching and Learning Specialist
         </td>
-		<td>
+    <td>
           <img src="images/scoombs/face.jpg" height=200px>
-		</td>
-	  </tr>
-	  </table>
+    </td>
+    </tr>
+    </table>
 </div>
 <hr> 
 
 <div class="story">
   <h3>Adam Domurad</h3>
-	  <table width="*">  
-	  <tr>
-	  	<td>
+    <table width="*">  
+    <tr>
+      <td>
           <img src="images/adomurad/adomurad.png" height=200px>
-		</td>
-	    <td>
+    </td>
+      <td>
         NSERC Engage Research Assistant (2014)<br>
         Current position: Graduate student at University of Waterloo
         </td>
-	  </tr>
-	  </table>
+    </tr>
+    </table>
 </div>
 
 <hr>
@@ -519,12 +552,12 @@ function closesubnav(event){
 <script type="text/javascript">
     <!--
       var menuitem1 = new menu(7,1,"hidden");
-			var menuitem2 = new menu(7,2,"hidden");
-			var menuitem3 = new menu(7,3,"hidden");
-			var menuitem4 = new menu(7,4,"hidden");
-			var menuitem5 = new menu(7,5,"hidden");
-			var menuitem6 = new menu(7,6,"hidden");
-			var menuitem7 = new menu(7,7,"hidden");
+      var menuitem2 = new menu(7,2,"hidden");
+      var menuitem3 = new menu(7,3,"hidden");
+      var menuitem4 = new menu(7,4,"hidden");
+      var menuitem5 = new menu(7,5,"hidden");
+      var menuitem6 = new menu(7,6,"hidden");
+      var menuitem7 = new menu(7,7,"hidden");
     // -->
     </script> 
 </body>
