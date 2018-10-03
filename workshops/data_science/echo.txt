@@ -1,0 +1,18 @@
+On September 26, over 100 researchers from 25 government departments congregated at NRC Sussex Drive in Ottawa, also known as The Temple of Science.  The event was organized by SDTech researcher, Isaac Tamblyn, whose research focuses on application of deep learning and artificial intelligence to nanoscale materials.  The technical conference was directed at data scientists from across the public sector. The idea was for them to present a problem that they have worked on and demonstrate how it was solved using data science techniques and tools. In total, there were 6 tech talks, a panel discussion, and a session where participants solicitied help from the crowd with techincal projects they were working on ideas how to better work with data being generated within their department.
+ 
+The opening speaker, Dr. Karen Cranston (Agriculture and Agri-Food Canada), set the tone whereby everyone agreed that data is plentiful. However, the issue is how to reign in all the data in order to use it to solve problems. Within the public sector, such problems are diverse. Talks during the day included "Prediction of Non-Compliance on Wood-Packaging Material" and "Decomposition of portfolio optimization problems for quantum annealing".
+
+
+Dr. Cranston is a volunteer with The Carpentries (https://carpentries.org), a not-for-profit which "teaches foundational coding and data science skills to researchers worldwide." A consist finding in Carpentries surveys is that one of the biggest needs within the community is more training on how to use ML and Data Science  tools more effectively.
+ 
+Isaac Tamblyn indicated that he organized this symposium because "everytime I went to a BBQ with friends in Ottawa, I found myself talking to public servants who were using data science tools to do their jobs."
+
+A common theme in these discussions was the fact many practitioners felt there were not enough opporunities to speak across departments at a technical level.
+
+"I figured I could probably help fix this, so I booked a room at Sussex and sent out an email to some of the people I knew that were working in the field." said Isaac.
+
+"Apparently there was some demand out there; I initially expected, maybe, 25 people would show up. Once registrations hit 125, I thought 'we are going to need more coffee'".
+
+By the end of the day, it was clear that data science is becoming a core part of public service decision making an analysis and that there are lots of opportunites for both formal and informal collaborations to take place between Departments.
+ 
+ Christian Ritter (Statists Canada) is taking the reigns for the next symposium. He is part of a group that is building a GC Machine Learning Community of Practice. Stats Canada will host the next meetup next Fall. Meanwhile, people interested in joining the community of practice should email Christian directly.
