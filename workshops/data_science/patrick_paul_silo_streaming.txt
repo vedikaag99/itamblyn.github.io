@@ -1,4 +1,0 @@
-Title: From data silos to data streaming
- 
-Abstract: To derive insights from data and automate decisions making, we first need access to data in near real time. This case study shows how we approach this challenge while reducing the development / maintenance costs.
- 
