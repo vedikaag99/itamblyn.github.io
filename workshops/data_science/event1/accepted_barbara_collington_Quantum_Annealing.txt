@@ -1,0 +1,6 @@
+Decomposition of portfolio optimization problems for quantum annealing
+
+Quantum computing has developed rapidly over the past decade. It is believed that a large- scale universal quantum computer, capable of executing arbitrary quantum operations, may be available by 2026.
+Currently available quantum hardware consists of small-scale universal machines and quantum annealers. Quantum annealers, pioneered by D-Wave, are specialized machines capable of finding solutions to optimization problems. This is accomplished by encoding a problem originally defined over integers or binary variables into an Ising model Hamiltonian. The Hamiltonian is designed so that its lowest-energy configuration, which can be obtained through the annealing process, corresponds to the solution of the optimization problem.
+The simplicity of the encoding for mapping quadratic problems onto a quantum annealer is particularly attractive, and annealing methods have already been applied to certain instances of portfolio optimization. However, due to the limited number of qubits available on D-Wave chips, it is necessary required to reduce the initial problem size by decomposing it into subproblems.
+Here we introduce a new Julia package and use it to decompose and minimize an in-house portfolio optimization problem.

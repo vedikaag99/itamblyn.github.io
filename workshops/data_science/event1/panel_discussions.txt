@@ -1,0 +1,32 @@
+Hello,
+
+You are receiving this email because you have registered for the upcoming mini-symposium "Data Science at the Temple", to be held on Wednesday, 26 September 2018. Some important updates follow.
+
+1) We received a very diverse and exciting number of submissions. Unfortunately, there were far too many to cover in one day. The schedule has now been updated with a list of tech talks and speakers (http://itamblyn.github.io/workshops). To everyone that submitted, Thank you! It is clear that this will not be the last event discussing such topics.
+
+2) We will also have two guided discussions. I would like to highlight the afternoon discussion in particular, which is specfically designed for non data science practitioners. A decent fraction of the registrations were from individuals that are not currently using data science in their position, but are interested in learning about potential applications. Some people have ideas or datasets which may be useful, but would like to partner with someone to develop the project. The afternoon panel discussion will be an opporutnity for such individuals to "pitch" their idea, dataset, project, etc to the crowd. 
+
+If you are such an individual, please use the following link to insert a slide which you can speak to during your pitch. It does not need to be detailed, highly technical, or even feasible (we understand you're a newbie :)! It is worth mentioning that this "mini" symposium is approaching non-mini status - there are now over 100 people have now registered. This may prove to be a unique opportunity to communicate with the local public sector data science community with your problem or idea.
+
+3) On a similar vein, a number of individuals have asked me to make annoucments about Departmental initiatives, ideas, or projects that they would like to broadcast to this community. If you are one of those individuals, please add a single slide here (https://docs.google.com/presentation/d/1NKjUV6xaw6QeVyZD9XRLFGFLPlBeGXc13aDBjHXZkfg/edit?usp=sharing). It will rotate during session breaks.  
+
+4) The "Temple" is currently undergoing some repair, so the front door will _not_ be accessible. We will enter and exit on the East side of the building (next to visitor parking). Please also remember to bring valid photo ID for entry.
+
+5) It is highly likely that I have forgotten to mention something - in order to avoid spaming you all, this will be the last email I will send to the group. Subsequent annoucements, addendums, and corrections will be indicated on the symposium website, so please be sure to check back in the days leading up to the 26th.
+
+If you have any questions, please do not hesitate to contact me.
+
+Best,
+
+- IT
+
+
+
+
+We will use the afternoon panel discussion for such people to talk about their potential projects, solicit feedback, and hopefully find collaboration opportunities.
+
+PLEASE contact me to participate in this special panel!
+
+I look forward to seeing you on the 26th at Sussex.
+
+- IT
