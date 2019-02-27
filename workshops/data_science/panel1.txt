@@ -1,7 +1,0 @@
-Panel 1
-
-Project pitches - we have the data but we need help
-
-Panel 2
-
-Tools of the trade - what software, hardware, or infrastructure are you using?
