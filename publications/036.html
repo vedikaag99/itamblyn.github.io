@@ -125,7 +125,7 @@ function closesubnav(event){
   <div id="breadCrumb">
   </div>
   <div id="pageName"> 
-    <h2>Manuscript Summary - Phase space sampling and operator confidence with generative adversarial networks</h2> 
+    <h2>Manuscript Summary - Extensive deep neural networks</h2> 
   </div> 
   <div id="pageNav"> 
     <div id="sectionLinks"> 
@@ -149,12 +149,13 @@ function closesubnav(event){
 <table width="*">  
   <tr>
   	    <td>
-		  <img src="images/036.png">
+		  <img src="images/ednn.png">
 		</td>
  
     <td>
 
-<p>Generative adverseraial networks are a relatively new form of deep neural networks which are based on a game between two competing sub-networks (the generator and the discriminator). The role of the generator is to trick the discriminator into thinking that it has produced "real" data. By real, we mean data that looks similar to something the discriminator has seen before. In this paper, we teach a generator to produce configurations from the Ising-model which we sampled using a number of standard techniques. The resulting generator is able to rapidly and efficiently sample phase space. Moreover, the discriminator, once trained, can predict the energy of a new configuration with a high degree of accurary (similar to our previously published work). Importantly however, it also reports a level of <i>confidence</i> in the prediction which correlates well with error. The discriminator is smart enough to know when it is right, and when it may be wrong. This is important when using deep neural networks for simulation.
+<p>In this article, we demonstrate a new type of deep neural network which is designed for the purpose of dividing a problem into many parts so that it can be efficiently worked on in parallel. Traditional neural networks have been optimized for operating on data which is scale invarient. Our new extensive neural networks maintain the property of additivity across sub-domains. This is an important property in physical systems. Our new EDNN operate at the same accuracy of previously reported work, but can be distributed over many GPU in parallel, making them ideal for use on massively parallel computing architextures. Additionally, EDNN operate on arbitrary sized inputs, so they can train on small structures, but be used to predict the properties of giant ones. Multi-level EDNN can be used in multi-scale modeling, where the degree of coarseness is interacdtion specific.
+
  
 
 
