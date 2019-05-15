@@ -7,7 +7,7 @@
 # To download the other files, there are two lines that need to be changed. They are the two lines directly
 # following the comment section and set the environment variables FILENAME and FILEID
 
-#   filename filename
+#   FILENAME FILEID
 # SHO_10e.h5 198gqXAZc-1PFfNqhOKBsVbiO5p2TtMdu
 #  SHO_3e.h5 1lxCr-zU18NWJb-lJvTehwS9n2yOZT3Nc
 #  SHO_2e.h5 1IgKJhPqQk2CvXA-pOGk2zdit1BxZkBsH
@@ -29,6 +29,6 @@ wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='
      | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
 
 wget --load-cookies cookies.txt -O $FILENAME \
-     'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)
+     'https://docs.google.com/uc?export=download&id='$FILEID'&confirm='$(<confirm.txt)
 
 rm -f confirm.txt cookies.txt
