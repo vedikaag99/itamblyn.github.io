@@ -4,6 +4,8 @@
 # 
 # By default, it will download the file SHO_10e.h5 
 # Note that the file is large (~100 GB), so if you are on a slow connection this will take a long time 
+# To download the other files, there are two lines that need to be changed. They are the two lines directly
+# following the comment section and set the environment variables FILENAME and FILEID
 
 #   filename filename
 # SHO_10e.h5 198gqXAZc-1PFfNqhOKBsVbiO5p2TtMdu
@@ -19,14 +21,14 @@
 # This script is adapted from here:
 #  https://www.matthuisman.nz/2019/01/download-google-drive-files-wget-curl.html 
 
-export filename=SHO_10e.h5
-export fileid=198gqXAZc-1PFfNqhOKBsVbiO5p2TtMdu
+export FILENAME=SHO_10e.h5
+export FILEID=198gqXAZc-1PFfNqhOKBsVbiO5p2TtMdu
 
 ## WGET ##
-wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$fileid -O- \
+wget --save-cookies cookies.txt 'https://docs.google.com/uc?export=download&id='$FILEID -O- \
      | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p' > confirm.txt
 
-wget --load-cookies cookies.txt -O $filename \
+wget --load-cookies cookies.txt -O $FILENAME \
      'https://docs.google.com/uc?export=download&id='$fileid'&confirm='$(<confirm.txt)
 
 rm -f confirm.txt cookies.txt
