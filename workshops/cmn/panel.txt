@@ -1,0 +1,22 @@
+Grad student: problem you thought would have been solved by now
+
+Problem you thought would NOT be solved but has been
+
+In 20 years, what will be different about a computational materials conference?
+
+What claims are hype? E.g. AI, quantum computing?
+
+If you had 1 million dollars for hardware, how would you spend it?
+
+What do you think the Canadian aspect of materials research should or could be?
+
+First computer: hard drive size? Ram?
+
+When did you first start programming?
+
+What is a computational method you wish you knew but don't? Eg qmc, dmrg, etc
+
+
+
+
+
