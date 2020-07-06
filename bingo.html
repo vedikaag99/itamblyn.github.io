@@ -1,0 +1,170 @@
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://kylemills.net/cleanbingo/goals.js"></script> 
+        <script>
+            
+            
+            function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+};
+        </script>
+        
+        <style>
+            .main_card {
+                font-family: 'Comic Neue','Roboto', sans-serif;
+                width:600px;
+                height:720px;
+                background-color:#8DB87C;
+            }
+            
+  
+            
+            .cell {
+                display:inline;
+                width:80px;
+                height:90px;
+                background-color:#FFFFFF;
+                margin:10px;
+                float:left;
+                padding:10px;
+                padding-top:0px;
+                font-size:10pt;
+            }
+            
+            .head {
+                background-color:#8DB87C;
+                font-size:72px;
+                width:80px;
+                font-family:'Roboto', sans-serif;
+            }
+            
+
+            .row {
+                height:120px;
+            };
+            
+            .cell p {
+                display:table-cell;
+                vertical-align:middle;
+                text-align:center;
+                width:100%;
+                font-size:8pt;
+            }
+            
+            .cell.daubed{background-color:#ffffc3;}
+            
+        </style>
+        
+        
+
+    </head>
+    
+    <body>
+        
+        <div class='main_card'>
+          
+          <div class='row'>
+              <div class='cell head' id='CLEANC' >C</div>
+              <div class='cell head' id='CLEANL' >L</div>
+              <div class='cell head' id='CLEANE' >E</div>
+              <div class='cell head' id='CLEANA' >A</div>
+              <div class='cell head' id='CLEANN' >N</div>
+          </div>
+          
+          <div class='row'>
+              <div class='cell' ><p class='cellcontent' id='cell1'></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell2'></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell3'></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell4'></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell5'></p></div>
+          </div>
+          
+          <div class='row'>
+              <div class='cell' ><p class='cellcontent' id='cell6'  ></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell7'  ></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell8'  ></p></div>
+              <div class='cell' ><p class='cellcontent' id='cell9'  ></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell10'></p></div>
+          </div>
+          
+          <div class='row'>
+              <div class='cell'  ><p class='cellcontent' id='cell11'   ></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell12'   ></p></div>
+              <div class='cell daubed'  ><p class='cellcontent' id='freespace'   ><strong>FREE SPACE</strong></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell13'   ></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell14'   ></p></div>
+          </div>
+          
+          <div class='row'>
+              <div class='cell'  ><p class='cellcontent' id='cell15'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell16'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell17'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell18'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell19'></p></div>
+          </div>
+          
+          <div class='row'>
+              <div class='cell'  ><p class='cellcontent' id='cell20'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell21'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell22'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell23'></p></div>
+              <div class='cell'  ><p class='cellcontent' id='cell24'></p></div>
+          </div>          
+          
+          
+        </div>
+        
+        <div style='text-align:center;width:600;padding-top:20px;'>Click cell to mark complete</div>
+        
+        
+       <script>
+            
+            $(".cell").click(function() {
+                console.log("clicked");
+                $(this).toggleClass("daubed");
+            });
+            
+                 
+            shuffle(goals);
+                 
+
+            
+            $(document).ready(function() {
+                
+                console.log("ready");
+                
+                $("[id^=cell]").each(function(){
+                    $(this).text(goals.pop());
+                });
+                
+                
+            })
+            
+            
+            
+        </script>
+        
+        
+        
+    </body>
+    
+</html>
