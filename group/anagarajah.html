@@ -1,0 +1,181 @@
+<html><!-- DW6 --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Andrew Nagarajah</title>
+<link rel="stylesheet" href="../emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91911-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead"> 
+  <h1 id="siteName"><big><b>C</b></big>omputational <big><b>L</b></big>aboratory for <big><b>E</b></big>nergy <big><b>A</b></big>nd <big><b>N</b></big>anoscience</h1> 
+  <div id="globalNav"> 
+    <img alt="" src="../gblnav_left.gif" height="32" width="4" id="gnl"> <img alt="" src="../glbnav_right.gif" height="32" width="4" id="gnr"> 
+    <div id="globalLink"> 
+      <a href="http://www.uoit.ca" target="uoit.ca" class="glink" id="gl1" onmouseover="ehandler(event,menuitem1);">University of Ontario Institute of Technology</a>
+	  <a href="http://www.physics.dal.ca" target="physics.dal.ca" class="glink" id="gl2" onmouseover="ehandler(event,menuitem2);">Faculty of Science</a>
+	  <a href="http://maps.google.com/maps?q=Halifax,+Nova+Scotia,+Canada&amp;spn=0.170079,0.282452&amp;hl=en" id="gl3" class="glink" onmouseover="ehandler(event,menuitem3);">Oshawa, Ontario, Canada</a>
+    </div> 
+    <!--end globalLinks--> 
+  </div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"> 
+    <a href="http://www.uoit.ca" target="www.uoit.ca">University Homepage</a> | 
+	<a href="http://science.uoit.ca" target="science.uoit.ca">Faculty of Science</a> | 
+	<a href="http://gradstudies.uoit.ca/" target="gradstudies.uoit.ca/">Faculty of Graduate Studies</a> | 
+	<a href="http://www.uoit.ca/registrar&shy;" target="registrar.uoit.ca">Registrar's Office</a> | 
+
+  </div> 
+  <div id="subglobal2" class="subglobalNav"> 
+    <a href="http://www.physics.dal.ca" target="physics.dal.ca">Physics Homepage</a> | 
+	<a href="http://www.physics.dal.ca/physics_3471.html" target="grad studies in physics">Graduate Studies in Physics</a> | 
+	<a href="http://www.physics.dal.ca/physics_3498.html" target="contact department">Department contact information</a>
+  </div> 
+  <div id="subglobal3" class="subglobalNav"> 
+    <a href="https://maps.google.com/maps?q=2000+Simcoe+St+N,+Oshawa,+ON,+Canada&amp;hl=en&amp;sll=37.857901,-122.252357&amp;sspn=0.011571,0.016351&amp;oq=2000+sim&amp;t=h&amp;hnear=2000+Simcoe+St+N,+Oshawa,+Ontario+L1H+7K4,+Canada&amp;z=16">Map it</a> | 
+	<a href="http://www.oshawa.ca/" target="HRM homepage">City of Oshawa</a> |
+    <a href="http://www.cbc.ca/toronto/" target="http://www.cbc.ca/toronto/">Regional News</a> | 
+	<a href="http://text.weatheroffice.gc.ca/forecast/city_e.html?on-117&amp;unit=m" target="weatheroffice.ec.gc.ca">Local Weather</a> | 
+	<a href="http://www.gc.ca/" target="gc.ca">Government of Canada</a>
+
+  </div> 
+  <div id="subglobal4" class="subglobalNav"> 
+    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> 
+  </div> 
+  <div id="subglobal5" class="subglobalNav"> 
+    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> 
+  </div> 
+  <div id="subglobal6" class="subglobalNav"> 
+    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> 
+  </div> 
+  <div id="subglobal7" class="subglobalNav"> 
+    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> 
+  </div> 
+  <div id="subglobal8" class="subglobalNav"> 
+    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> 
+  </div> 
+
+</div> 
+<!-- end masthead -->
+<div id="pagecell1"> 
+  <img alt="" src="../tl_curve_white.gif" height="6" width="6" id="tl"> <img alt="" src="../tr_curve_white.gif" height="6" width="6" id="tr">
+  <div id="breadCrumb">
+  </div>
+  <div id="pageName"> 
+    <h2>Group Members</h2> 
+  </div> 
+  <div id="pageNav"> 
+    <div id="sectionLinks"> 
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="index.html">Group Members</a>
+      <a href="../collaborators.html">Collaborators</a>
+      <a href="../codes.html">Codes and Computing</a>
+      <a href="../teaching.html">Teaching</a>
+      <a href="../funding.html">Funding</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../prospective_students.html">Prospective Students</a>
+      <a href="../classroom_tech.html">Classroom Tech</a>
+
+      
+      
+    </div> 
+
+  </div> 
+  <div id="content"> 
+    <div class="story">
+
+<img src="images/anagarajah/anagarajah.jpg" height="250px">
+
+<br><br>I am an undergraduate in Mathematics at the University of Ottawa
+<br><br>
+
+Github: <a href="https://github.com/andrewnags" target="_blank">https://github.com/andrewnags</a>
+
+
+</div>
+</div>
+<div id="siteInfo"> 
+      <a href="http://www.uoit.ca" target="uoit.ca"><img src="../images/uoit.jpg" alt="UOIT" border="0"></a> <img src="../images/space.GIF" width="75" height="31"> 
+      <!-- <a href="http://www.nserc.gc.ca" target="nserc" border="0"><img src="images/nserc.gif" width="75" height="31" border="0"></a> <img src="../images/space.GIF" width="75" height="31"> -->
+      <a href="http://computecanada.ca" target="computecanada"><img src="../images/compute_canada.png" height="31"> </a><a href="http://www.computecanada.org"></a><img src="../images/space.GIF" width="75" height="31">
+      <a href="http://www.soscip.org" target="soscip" border="0"><img src="../images/soscip_logo.png" height="31" border="0"></a> <img src="../images/space.GIF" width="75" height="31"> 
+</div>
+
+
+
+</div>
+
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
+
+</body></html>
